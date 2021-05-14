@@ -2,103 +2,118 @@ export interface Metadata {
   name: string
   symbol: string
   decimals: number
-  rpc: string
+  rpc?: string
   explorer: string
 }
 
+export const CHAIN_ETHER = 1
+export const CHAIN_ETHER_ROPSTEN = 3
+export const CHAIN_ETHER_RINKEBY = 4
+export const CHAIN_ETHER_GOERLI = 5
+export const CHAIN_ETHER_KOVAN = 42
+
+export const CHAIN_POLYGON = 137
+export const CHAIN_POLYGON_MUMBAI = 137
+
+export const CHAIN_BSC = 56
+export const CHAIN_BSC_TESTNET = 97
+
+export const CHAIN_HECO = 128
+export const CHAIN_HECO_TESTNET = 256
+
+export const CHAIN_OK = 66
+export const CHAIN_OK_TESTNET = 65
+
+export const CHAIN_HARMONY_0 = 1666600000
+
 export const Chains: { [chainID: number]: Metadata } = {
-  1: {
+  [CHAIN_ETHER]: {
     name: 'Ethereum',
     symbol: 'ETH',
     decimals: 18,
-    rpc: 'https://mainnet.infura.io/v3/',
     explorer: 'https://etherscan.io'
   },
-  3: {
+  [CHAIN_ETHER_ROPSTEN]: {
     name: 'Ropsten',
     symbol: 'ETH',
     decimals: 18,
-    rpc: 'https://ropsten.infura.io/v3/',
     explorer: 'https://ropsten.etherscan.io'
   },
-  42: {
+  [CHAIN_ETHER_KOVAN]: {
     name: 'Kovan',
     symbol: 'ETH',
     decimals: 18,
-    rpc: 'https://kovan.infura.io/v3/',
     explorer: 'https://kovan.etherscan.io'
   },
-  4: {
+  [CHAIN_ETHER_RINKEBY]: {
     name: 'Rinkeby',
     symbol: 'ETH',
     decimals: 18,
-    rpc: 'https://rinkeby.infura.io/v3/',
     explorer: 'https://rinkeby.etherscan.io'
   },
-  5: {
+  [CHAIN_ETHER_GOERLI]: {
     name: 'Goerli',
     symbol: 'ETH',
     decimals: 18,
-    rpc: 'https://goerli.infura.io/v3/',
     explorer: 'https://goerli.etherscan.io'
   },
-  137: {
-    name: 'Matic Network',
+  [CHAIN_POLYGON]: {
+    name: 'Matic Mainnet',
     symbol: 'Matic',
     decimals: 18,
     rpc: 'https://rpc-mainnet.maticvigil.com',
     explorer: 'https://explorer-mainnet.maticvigil.com',
   },
-  80001: {
-    name: 'Mumbai',
+  [CHAIN_POLYGON_MUMBAI]: {
+    name: 'Matic Testnet Mumbai',
     symbol: 'Matic',
     decimals: 18,
     rpc: 'https://rpc-mumbai.maticvigil.com',
     explorer: 'https://explorer-mumbai.maticvigil.com',
   },
-  128: {
-    name: 'HecoChain MainNetwork',
+  [CHAIN_HECO]: {
+    name: 'Huobi ECO Chain Mainnet',
     symbol: 'HT',
     decimals: 18,
     rpc: 'https://http-mainnet.hecochain.com',
     explorer: 'https://hecoinfo.com',
   },
-  256: {
-    name: 'HecoChain TestNetwork',
-    symbol: 'ETH',
+  [CHAIN_HECO_TESTNET]: {
+    name: 'Huobi ECO Chain Testnet',
+    symbol: 'HT',
     decimals: 18,
     rpc: 'https://http-testnet.hecochain.com',
     explorer: 'https://testnet.hecoinfo.com',
   },
-  56: {
-    name: 'Binance Smart Chain',
+  [CHAIN_BSC]: {
+    name: 'Binance Smart Chain Mainnet',
     symbol: 'BNB',
     decimals: 18,
     rpc: 'https://bsc-dataseed1.binance.org',
     explorer: 'https://bscscan.com',
   },
-  97: {
-    name: 'Binance Smart Chain Test Network',
+  [CHAIN_BSC_TESTNET]: {
+    name: 'Binance Smart Chain Testnet',
     symbol: 'BNB',
     decimals: 18,
     rpc: 'https://data-seed-prebsc-1-s1.binance.org:8545',
     explorer: 'https://testnet.bscscan.com',
   },
-  65: {
+  [CHAIN_OK_TESTNET]: {
     name: 'OKExChain Testnet',
     symbol: 'OKT',
     decimals: 18,
     rpc: 'https://exchaintest.okexcn.com',
     explorer: 'https://www.oklink.com/okexchain-test',
   },
-  66: {
+  [CHAIN_OK]: {
     name: 'OKExChain Mainnet',
     symbol: 'OKT',
     decimals: 18,
     rpc: 'https://exchainrpc.okex.org',
     explorer: 'https://www.okex.com/okexchain'
   },
-  1666600000: {
+  [CHAIN_HARMONY_0]: {
     name: 'Harmony Mainnet Shard 0',
     symbol: 'ONE',
     decimals: 18,

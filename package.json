@@ -1,6 +1,6 @@
 {
-  "name": "chains",
-  "version": "1.0.0",
+  "name": "@w3u/chains",
+  "version": "1.0.1",
   "description": "Provides metadata(chainid, rpc...) for based on ethereum.",
   "repository": "git@github.com:web3-utilities/chains.git",
   "author": "Aiden X",
