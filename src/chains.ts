@@ -1,5 +1,8 @@
 export interface Metadata {
   name: string
+  displayName: string
+  icon: string
+  tokenIcon: string
   symbol: string
   decimals: number
   rpc?: string
@@ -26,39 +29,59 @@ export const CHAIN_OK_TESTNET = 65
 
 export const CHAIN_HARMONY_0 = 1666600000
 
+export const CHAIN_ETHER_LIST = [CHAIN_ETHER, CHAIN_ETHER_ROPSTEN, CHAIN_ETHER_RINKEBY, CHAIN_ETHER_GOERLI, CHAIN_ETHER_KOVAN]
+
 export const Chains: { [chainID: number]: Metadata } = {
   [CHAIN_ETHER]: {
     name: 'Ethereum',
+    displayName: 'Ethereum',
+    icon: 'https://raw.githubusercontent.com/web3-utilities/assets/main/chains/ethereum.png',
+    tokenIcon: 'https://raw.githubusercontent.com/web3-utilities/assets/main/chains/ethereum.png',
     symbol: 'ETH',
     decimals: 18,
     explorer: 'https://etherscan.io'
   },
   [CHAIN_ETHER_ROPSTEN]: {
     name: 'Ropsten',
+    displayName: 'Ropsten',
+    icon: 'https://raw.githubusercontent.com/web3-utilities/assets/main/chains/ethereum.png',
+    tokenIcon: 'https://raw.githubusercontent.com/web3-utilities/assets/main/chains/ethereum.png',
     symbol: 'ETH',
     decimals: 18,
     explorer: 'https://ropsten.etherscan.io'
   },
   [CHAIN_ETHER_KOVAN]: {
     name: 'Kovan',
+    displayName: 'Kovan',
+    icon: 'https://raw.githubusercontent.com/web3-utilities/assets/main/chains/ethereum.png',
+    tokenIcon: 'https://raw.githubusercontent.com/web3-utilities/assets/main/chains/ethereum.png',
     symbol: 'ETH',
     decimals: 18,
     explorer: 'https://kovan.etherscan.io'
   },
   [CHAIN_ETHER_RINKEBY]: {
     name: 'Rinkeby',
+    displayName: 'Rinkeby',
+    icon: 'https://raw.githubusercontent.com/web3-utilities/assets/main/chains/ethereum.png',
+    tokenIcon: 'https://raw.githubusercontent.com/web3-utilities/assets/main/chains/ethereum.png',
     symbol: 'ETH',
     decimals: 18,
     explorer: 'https://rinkeby.etherscan.io'
   },
   [CHAIN_ETHER_GOERLI]: {
     name: 'Goerli',
+    displayName: 'Goerli',
+    icon: 'https://raw.githubusercontent.com/web3-utilities/assets/main/chains/ethereum.png',
+    tokenIcon: 'https://raw.githubusercontent.com/web3-utilities/assets/main/chains/ethereum.png',
     symbol: 'ETH',
     decimals: 18,
     explorer: 'https://goerli.etherscan.io'
   },
   [CHAIN_POLYGON]: {
     name: 'Matic Mainnet',
+    displayName: 'Matic',
+    icon: 'https://raw.githubusercontent.com/web3-utilities/assets/main/chains/polygon.png',
+    tokenIcon: 'https://raw.githubusercontent.com/web3-utilities/assets/main/chains/polygon.png',
     symbol: 'Matic',
     decimals: 18,
     rpc: 'https://rpc-mainnet.maticvigil.com',
@@ -66,6 +89,9 @@ export const Chains: { [chainID: number]: Metadata } = {
   },
   [CHAIN_POLYGON_MUMBAI]: {
     name: 'Matic Testnet Mumbai',
+    displayName: 'Matic Testnet',
+    icon: 'https://raw.githubusercontent.com/web3-utilities/assets/main/chains/polygon.png',
+    tokenIcon: 'https://raw.githubusercontent.com/web3-utilities/assets/main/chains/polygon.png',
     symbol: 'Matic',
     decimals: 18,
     rpc: 'https://rpc-mumbai.maticvigil.com',
@@ -73,6 +99,9 @@ export const Chains: { [chainID: number]: Metadata } = {
   },
   [CHAIN_HECO]: {
     name: 'Huobi ECO Chain Mainnet',
+    displayName: 'Heco',
+    icon: '',
+    tokenIcon: '',
     symbol: 'HT',
     decimals: 18,
     rpc: 'https://http-mainnet.hecochain.com',
@@ -80,6 +109,9 @@ export const Chains: { [chainID: number]: Metadata } = {
   },
   [CHAIN_HECO_TESTNET]: {
     name: 'Huobi ECO Chain Testnet',
+    displayName: 'Heco Testnet',
+    icon: '',
+    tokenIcon: '',
     symbol: 'HT',
     decimals: 18,
     rpc: 'https://http-testnet.hecochain.com',
@@ -87,6 +119,9 @@ export const Chains: { [chainID: number]: Metadata } = {
   },
   [CHAIN_BSC]: {
     name: 'Binance Smart Chain Mainnet',
+    displayName: 'BSC',
+    icon: 'https://raw.githubusercontent.com/web3-utilities/assets/main/chains/bsc.png',
+    tokenIcon: 'https://raw.githubusercontent.com/trustwallet/assets/0e16182d4d7c712e3ac79e2bc2ac18684eef1053/blockchains/binance/info/logo.png',
     symbol: 'BNB',
     decimals: 18,
     rpc: 'https://bsc-dataseed1.binance.org',
@@ -94,6 +129,9 @@ export const Chains: { [chainID: number]: Metadata } = {
   },
   [CHAIN_BSC_TESTNET]: {
     name: 'Binance Smart Chain Testnet',
+    displayName: 'BSC Testnet',
+    icon: 'https://raw.githubusercontent.com/web3-utilities/assets/main/chains/bsc.png',
+    tokenIcon: 'https://raw.githubusercontent.com/trustwallet/assets/0e16182d4d7c712e3ac79e2bc2ac18684eef1053/blockchains/binance/info/logo.png',
     symbol: 'BNB',
     decimals: 18,
     rpc: 'https://data-seed-prebsc-1-s1.binance.org:8545',
@@ -101,6 +139,9 @@ export const Chains: { [chainID: number]: Metadata } = {
   },
   [CHAIN_OK_TESTNET]: {
     name: 'OKExChain Testnet',
+    displayName: 'OKC Testnet',
+    icon: '',
+    tokenIcon: '',
     symbol: 'OKT',
     decimals: 18,
     rpc: 'https://exchaintest.okexcn.com',
@@ -108,6 +149,9 @@ export const Chains: { [chainID: number]: Metadata } = {
   },
   [CHAIN_OK]: {
     name: 'OKExChain Mainnet',
+    displayName: 'OKC',
+    icon: '',
+    tokenIcon: '',
     symbol: 'OKT',
     decimals: 18,
     rpc: 'https://exchainrpc.okex.org',
@@ -115,6 +159,9 @@ export const Chains: { [chainID: number]: Metadata } = {
   },
   [CHAIN_HARMONY_0]: {
     name: 'Harmony Mainnet Shard 0',
+    displayName: 'Harmony0',
+    icon: '',
+    tokenIcon: '',
     symbol: 'ONE',
     decimals: 18,
     rpc: 'https://api.harmony.one',
