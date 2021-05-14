@@ -140,8 +140,8 @@ export const Chains: { [chainID: number]: Metadata } = {
   [CHAIN_OK_TESTNET]: {
     name: 'OKExChain Testnet',
     displayName: 'OKC Testnet',
-    icon: '',
-    tokenIcon: '',
+    icon: 'https://raw.githubusercontent.com/web3-utilities/assets/main/chains/okc.png',
+    tokenIcon: 'https://raw.githubusercontent.com/web3-utilities/assets/main/chains/okc.png',
     symbol: 'OKT',
     decimals: 18,
     rpc: 'https://exchaintest.okexcn.com',
@@ -150,8 +150,8 @@ export const Chains: { [chainID: number]: Metadata } = {
   [CHAIN_OK]: {
     name: 'OKExChain Mainnet',
     displayName: 'OKC',
-    icon: '',
-    tokenIcon: '',
+    icon: 'https://raw.githubusercontent.com/web3-utilities/assets/main/chains/okc.png',
+    tokenIcon: 'https://raw.githubusercontent.com/web3-utilities/assets/main/chains/okc.png',
     symbol: 'OKT',
     decimals: 18,
     rpc: 'https://exchainrpc.okex.org',
