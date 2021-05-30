@@ -30,6 +30,9 @@ export const CHAIN_OK_TESTNET = 65
 
 export const CHAIN_HARMONY_0 = 1666600000
 
+export const CHAIN_AVALANCHE = 43114
+export const CHAIN_AVALANCHE_TESTNET = 43113
+
 export const CHAIN_ETHER_LIST = [CHAIN_ETHER, CHAIN_ETHER_ROPSTEN, CHAIN_ETHER_RINKEBY, CHAIN_ETHER_GOERLI, CHAIN_ETHER_KOVAN]
 
 export const Chains: { [chainID: number]: Metadata } = {
@@ -181,5 +184,27 @@ export const Chains: { [chainID: number]: Metadata } = {
     decimals: 18,
     rpc: 'https://api.harmony.one',
     explorer: 'https://explorer.harmony.one',
+  },
+  [CHAIN_AVALANCHE]: {
+    name: 'Avalanche Mainnet',
+    displayName: 'Avalanche',
+    icon: 'https://raw.githubusercontent.com/web3-utilities/assets/main/chains/avalanche.svg',
+    whiteIcon: '',
+    tokenIcon: 'https://raw.githubusercontent.com/web3-utilities/assets/main/chains/avalanche.svg',
+    symbol: 'AVAX',
+    decimals: 18,
+    rpc: 'https://api.avax.network/ext/bc/C/rpc',
+    explorer: 'https://cchain.explorer.avax.network/',
+  },
+  [CHAIN_AVALANCHE_TESTNET]: {
+    name: 'Avalanche Fuji Testnet',
+    displayName: 'Avalanche Testnet',
+    icon: 'https://raw.githubusercontent.com/web3-utilities/assets/main/chains/avalanche.svg',
+    whiteIcon: '',
+    tokenIcon: 'https://raw.githubusercontent.com/web3-utilities/assets/main/chains/avalanche.svg',
+    symbol: 'AVAX',
+    decimals: 18,
+    rpc: 'https://api.avax-test.network/ext/bc/C/rpc',
+    explorer: 'https://cchain.explorer.avax-test.network',
   },
 }
