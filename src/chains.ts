@@ -29,6 +29,7 @@ export const CHAIN_OK = 66
 export const CHAIN_OK_TESTNET = 65
 
 export const CHAIN_HARMONY_0 = 1666600000
+export const CHAIN_HARMONY_0_TESTNET = 1666700000 
 
 export const CHAIN_AVALANCHE = 43114
 export const CHAIN_AVALANCHE_TESTNET = 43113
@@ -177,13 +178,24 @@ export const Chains: { [chainID: number]: Metadata } = {
   [CHAIN_HARMONY_0]: {
     name: 'Harmony Mainnet Shard 0',
     displayName: 'Harmony0',
-    icon: '',
+    icon: 'https://raw.githubusercontent.com/web3-utilities/assets/main/chains/harmony.svg',
     whiteIcon: '',
-    tokenIcon: '',
+    tokenIcon: 'https://raw.githubusercontent.com/web3-utilities/assets/main/chains/harmony.svg',
     symbol: 'ONE',
     decimals: 18,
     rpc: 'https://api.harmony.one',
     explorer: 'https://explorer.harmony.one',
+  },
+  [CHAIN_HARMONY_0_TESTNET]: {
+    name: 'Harmony Testnet Shard 0',
+    displayName: 'Harmony0 Testnet',
+    icon: 'https://raw.githubusercontent.com/web3-utilities/assets/main/chains/harmony.svg',
+    whiteIcon: '',
+    tokenIcon: 'https://raw.githubusercontent.com/web3-utilities/assets/main/chains/harmony.svg',
+    symbol: 'ONE',
+    decimals: 18,
+    rpc: 'https://api.s0.b.hmny.io',
+    explorer: 'https://explorer.pops.one',
   },
   [CHAIN_AVALANCHE]: {
     name: 'Avalanche Mainnet',
