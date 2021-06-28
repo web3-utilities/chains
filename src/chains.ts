@@ -154,8 +154,8 @@ export const Chains: { [chainID: number]: Metadata } = {
     explorer: 'https://testnet.bscscan.com',
   },
   [CHAIN_OK_TESTNET]: {
-    name: 'OKExChain Testnet',
-    displayName: 'OKC Testnet',
+    name: 'OKEXChain Testnet',
+    displayName: 'OKEXChain Testnet',
     icon: 'https://raw.githubusercontent.com/web3-utilities/assets/main/chains/okc.png',
     whiteIcon: 'https://raw.githubusercontent.com/web3-utilities/assets/main/chains/okc.png',
     tokenIcon: 'https://raw.githubusercontent.com/web3-utilities/assets/main/chains/okc.png',
@@ -165,8 +165,8 @@ export const Chains: { [chainID: number]: Metadata } = {
     explorer: 'https://www.oklink.com/okexchain-test',
   },
   [CHAIN_OK]: {
-    name: 'OKExChain Mainnet',
-    displayName: 'OKC',
+    name: 'OKEXChain Mainnet',
+    displayName: 'OKEXChain',
     icon: 'https://raw.githubusercontent.com/web3-utilities/assets/main/chains/okc.png',
     whiteIcon: 'https://raw.githubusercontent.com/web3-utilities/assets/main/chains/okc.png',
     tokenIcon: 'https://raw.githubusercontent.com/web3-utilities/assets/main/chains/okc.png',
