@@ -17,7 +17,7 @@ export const CHAIN_ETHER_GOERLI = 5
 export const CHAIN_ETHER_KOVAN = 42
 
 export const CHAIN_POLYGON = 137
-export const CHAIN_POLYGON_MUMBAI = 137
+export const CHAIN_POLYGON_MUMBAI = 80001
 
 export const CHAIN_BSC = 56
 export const CHAIN_BSC_TESTNET = 97
