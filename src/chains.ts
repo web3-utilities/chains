@@ -88,8 +88,8 @@ export const Chains: { [chainID: number]: Metadata } = {
     explorer: 'https://goerli.etherscan.io'
   },
   [CHAIN_POLYGON]: {
-    name: 'Matic Mainnet',
-    displayName: 'Matic',
+    name: 'Polygon Mainnet',
+    displayName: 'Polygon',
     icon: 'https://raw.githubusercontent.com/web3-utilities/assets/main/chains/polygon.png',
     whiteIcon: 'https://raw.githubusercontent.com/web3-utilities/assets/main/chains/polygon.png',
     tokenIcon: 'https://raw.githubusercontent.com/web3-utilities/assets/main/chains/polygon.png',
@@ -99,8 +99,8 @@ export const Chains: { [chainID: number]: Metadata } = {
     explorer: 'https://explorer-mainnet.maticvigil.com',
   },
   [CHAIN_POLYGON_MUMBAI]: {
-    name: 'Matic Testnet Mumbai',
-    displayName: 'Matic Testnet',
+    name: 'Polygon Testnet Mumbai',
+    displayName: 'Polygon Testnet',
     icon: 'https://raw.githubusercontent.com/web3-utilities/assets/main/chains/polygon.png',
     whiteIcon: 'https://raw.githubusercontent.com/web3-utilities/assets/main/chains/polygon.png',
     tokenIcon: 'https://raw.githubusercontent.com/web3-utilities/assets/main/chains/polygon.png',
