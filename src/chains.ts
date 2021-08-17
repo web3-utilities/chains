@@ -95,7 +95,7 @@ export const Chains: { [chainID: number]: Metadata } = {
     tokenIcon: 'https://raw.githubusercontent.com/web3-utilities/assets/main/chains/polygon.png',
     symbol: 'Matic',
     decimals: 18,
-    rpc: 'https://rpc-mainnet.maticvigil.com',
+    rpc: 'https://rpc-mainnet.matic.network',
     explorer: 'https://explorer-mainnet.maticvigil.com',
   },
   [CHAIN_POLYGON_MUMBAI]: {
