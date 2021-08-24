@@ -231,7 +231,7 @@ export const Chains: { [chainID: number]: Metadata } = {
     symbol: 'FTM',
     decimals: 18,
     rpc: 'https://rpc.testnet.fantom.network/',
-    explorer: ''
+    explorer: 'https://explorer.testnet.fantom.network/'
   },
   [CHAIN_XDAI_TESTNET]: {
     name: 'XDAI Testnet',
@@ -242,6 +242,6 @@ export const Chains: { [chainID: number]: Metadata } = {
     symbol: 'XDAI',
     decimals: 18,
     rpc: 'https://sokol.poa.network',
-    explorer: ''
+    explorer: 'https://blockscout.com/poa/sokol'
   }
 }
