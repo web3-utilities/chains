@@ -36,6 +36,9 @@ export const CHAIN_AVALANCHE_TESTNET = 43113
 
 export const CHAIN_ETHER_LIST = [CHAIN_ETHER, CHAIN_ETHER_ROPSTEN, CHAIN_ETHER_RINKEBY, CHAIN_ETHER_GOERLI, CHAIN_ETHER_KOVAN]
 
+export const CHAIN_FANTOM_TESTNET = 4002
+export const CHAIN_XDAI_TESTNET = 77
+
 export const Chains: { [chainID: number]: Metadata } = {
   [CHAIN_ETHER]: {
     name: 'Ethereum',
@@ -219,4 +222,26 @@ export const Chains: { [chainID: number]: Metadata } = {
     rpc: 'https://api.avax-test.network/ext/bc/C/rpc',
     explorer: 'https://cchain.explorer.avax-test.network',
   },
+  [CHAIN_FANTOM_TESTNET]: {
+    name: 'Fantom Testnet',
+    displayName: 'Fantom Testnet',
+    icon: 'https://cryptologos.cc/logos/fantom-ftm-logo.svg?v=013',
+    whiteIcon: '',
+    tokenIcon: 'https://cryptologos.cc/logos/fantom-ftm-logo.svg?v=013',
+    symbol: 'FTM',
+    decimals: 18,
+    rpc: 'https://rpc.testnet.fantom.network/',
+    explorer: ''
+  },
+  [CHAIN_XDAI_TESTNET]: {
+    name: 'XDAI Testnet',
+    displayName: 'XDAI Testnet',
+    icon: 'https://cryptologos.cc/logos/xdai-stake-logo.svg?v=013',
+    whiteIcon: '',
+    tokenIcon: 'https://cryptologos.cc/logos/xdai-stake-logo.svg?v=013',
+    symbol: 'XDAI',
+    decimals: 18,
+    rpc: 'https://sokol.poa.network',
+    explorer: ''
+  }
 }
