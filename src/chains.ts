@@ -233,7 +233,7 @@ export const Chains: {[chainID: number]: Metadata} = {
     rpc: 'https://api.avax-test.network/ext/bc/C/rpc',
     explorer: 'https://cchain.explorer.avax-test.network',
   },
-  [CHAIN_FANTOM_TESTNET]: {
+  [CHAIN_FANTOM]: {
     name: 'Fantom',
     displayName: 'Fantom',
     icon: 'https://cryptologos.cc/logos/fantom-ftm-logo.svg?v=013',
