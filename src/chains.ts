@@ -29,17 +29,26 @@ export const CHAIN_OK = 66
 export const CHAIN_OK_TESTNET = 65
 
 export const CHAIN_HARMONY_0 = 1666600000
-export const CHAIN_HARMONY_0_TESTNET = 1666700000 
+export const CHAIN_HARMONY_0_TESTNET = 1666700000
 
 export const CHAIN_AVALANCHE = 43114
 export const CHAIN_AVALANCHE_TESTNET = 43113
 
-export const CHAIN_ETHER_LIST = [CHAIN_ETHER, CHAIN_ETHER_ROPSTEN, CHAIN_ETHER_RINKEBY, CHAIN_ETHER_GOERLI, CHAIN_ETHER_KOVAN]
+export const CHAIN_ETHER_LIST = [
+  CHAIN_ETHER,
+  CHAIN_ETHER_ROPSTEN,
+  CHAIN_ETHER_RINKEBY,
+  CHAIN_ETHER_GOERLI,
+  CHAIN_ETHER_KOVAN,
+]
 
+export const CHAIN_FANTOM = 250
 export const CHAIN_FANTOM_TESTNET = 4002
+
+export const CHAIN_XDAI = 100
 export const CHAIN_XDAI_TESTNET = 77
 
-export const Chains: { [chainID: number]: Metadata } = {
+export const Chains: {[chainID: number]: Metadata} = {
   [CHAIN_ETHER]: {
     name: 'Ethereum',
     displayName: 'Ethereum',
@@ -48,7 +57,7 @@ export const Chains: { [chainID: number]: Metadata } = {
     tokenIcon: 'https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/svg/color/eth.svg',
     symbol: 'ETH',
     decimals: 18,
-    explorer: 'https://etherscan.io'
+    explorer: 'https://etherscan.io',
   },
   [CHAIN_ETHER_ROPSTEN]: {
     name: 'Ropsten',
@@ -58,7 +67,7 @@ export const Chains: { [chainID: number]: Metadata } = {
     tokenIcon: 'https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/svg/color/eth.svg',
     symbol: 'ETH',
     decimals: 18,
-    explorer: 'https://ropsten.etherscan.io'
+    explorer: 'https://ropsten.etherscan.io',
   },
   [CHAIN_ETHER_KOVAN]: {
     name: 'Kovan',
@@ -68,7 +77,7 @@ export const Chains: { [chainID: number]: Metadata } = {
     tokenIcon: 'https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/svg/color/eth.svg',
     symbol: 'ETH',
     decimals: 18,
-    explorer: 'https://kovan.etherscan.io'
+    explorer: 'https://kovan.etherscan.io',
   },
   [CHAIN_ETHER_RINKEBY]: {
     name: 'Rinkeby',
@@ -78,7 +87,7 @@ export const Chains: { [chainID: number]: Metadata } = {
     tokenIcon: 'https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/svg/color/eth.svg',
     symbol: 'ETH',
     decimals: 18,
-    explorer: 'https://rinkeby.etherscan.io'
+    explorer: 'https://rinkeby.etherscan.io',
   },
   [CHAIN_ETHER_GOERLI]: {
     name: 'Goerli',
@@ -88,7 +97,7 @@ export const Chains: { [chainID: number]: Metadata } = {
     tokenIcon: 'https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/svg/color/eth.svg',
     symbol: 'ETH',
     decimals: 18,
-    explorer: 'https://goerli.etherscan.io'
+    explorer: 'https://goerli.etherscan.io',
   },
   [CHAIN_POLYGON]: {
     name: 'Polygon Mainnet',
@@ -139,7 +148,8 @@ export const Chains: { [chainID: number]: Metadata } = {
     displayName: 'BSC',
     icon: 'https://raw.githubusercontent.com/web3-utilities/assets/main/chains/bsc.png',
     whiteIcon: 'https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/svg/white/bnb.svg',
-    tokenIcon: 'https://raw.githubusercontent.com/trustwallet/assets/0e16182d4d7c712e3ac79e2bc2ac18684eef1053/blockchains/binance/info/logo.png',
+    tokenIcon:
+      'https://raw.githubusercontent.com/trustwallet/assets/0e16182d4d7c712e3ac79e2bc2ac18684eef1053/blockchains/binance/info/logo.png',
     symbol: 'BNB',
     decimals: 18,
     rpc: 'https://bsc-dataseed1.binance.org',
@@ -150,7 +160,8 @@ export const Chains: { [chainID: number]: Metadata } = {
     displayName: 'BSC Testnet',
     icon: 'https://raw.githubusercontent.com/web3-utilities/assets/main/chains/bsc.png',
     whiteIcon: 'https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/svg/white/bnb.svg',
-    tokenIcon: 'https://raw.githubusercontent.com/trustwallet/assets/0e16182d4d7c712e3ac79e2bc2ac18684eef1053/blockchains/binance/info/logo.png',
+    tokenIcon:
+      'https://raw.githubusercontent.com/trustwallet/assets/0e16182d4d7c712e3ac79e2bc2ac18684eef1053/blockchains/binance/info/logo.png',
     symbol: 'BNB',
     decimals: 18,
     rpc: 'https://data-seed-prebsc-1-s1.binance.org:8545',
@@ -176,7 +187,7 @@ export const Chains: { [chainID: number]: Metadata } = {
     symbol: 'OKT',
     decimals: 18,
     rpc: 'https://exchainrpc.okex.org',
-    explorer: 'https://www.okex.com/okexchain'
+    explorer: 'https://www.okex.com/okexchain',
   },
   [CHAIN_HARMONY_0]: {
     name: 'Harmony Mainnet Shard 0',
@@ -223,6 +234,17 @@ export const Chains: { [chainID: number]: Metadata } = {
     explorer: 'https://cchain.explorer.avax-test.network',
   },
   [CHAIN_FANTOM_TESTNET]: {
+    name: 'Fantom',
+    displayName: 'Fantom',
+    icon: 'https://cryptologos.cc/logos/fantom-ftm-logo.svg?v=013',
+    whiteIcon: '',
+    tokenIcon: 'https://cryptologos.cc/logos/fantom-ftm-logo.svg?v=013',
+    symbol: 'FTM',
+    decimals: 18,
+    rpc: 'https://rpc.ftm.tools/',
+    explorer: 'https://ftmscan.com/',
+  },
+  [CHAIN_FANTOM_TESTNET]: {
     name: 'Fantom Testnet',
     displayName: 'Fantom Testnet',
     icon: 'https://cryptologos.cc/logos/fantom-ftm-logo.svg?v=013',
@@ -231,7 +253,18 @@ export const Chains: { [chainID: number]: Metadata } = {
     symbol: 'FTM',
     decimals: 18,
     rpc: 'https://rpc.testnet.fantom.network/',
-    explorer: 'https://explorer.testnet.fantom.network/'
+    explorer: 'https://explorer.testnet.fantom.network/',
+  },
+  [CHAIN_XDAI]: {
+    name: 'XDAI',
+    displayName: 'XDAI',
+    icon: 'https://cryptologos.cc/logos/xdai-stake-logo.svg?v=013',
+    whiteIcon: '',
+    tokenIcon: 'https://cryptologos.cc/logos/xdai-stake-logo.svg?v=013',
+    symbol: 'XDAI',
+    decimals: 18,
+    rpc: 'https://rpc.xdaichain.com/',
+    explorer: 'https://blockscout.com/xdai/mainnet',
   },
   [CHAIN_XDAI_TESTNET]: {
     name: 'XDAI Testnet',
@@ -242,6 +275,6 @@ export const Chains: { [chainID: number]: Metadata } = {
     symbol: 'XDAI',
     decimals: 18,
     rpc: 'https://sokol.poa.network',
-    explorer: 'https://blockscout.com/poa/sokol'
-  }
+    explorer: 'https://blockscout.com/poa/sokol',
+  },
 }
