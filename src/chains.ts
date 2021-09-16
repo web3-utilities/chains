@@ -34,6 +34,8 @@ export const CHAIN_HARMONY_0_TESTNET = 1666700000
 export const CHAIN_AVALANCHE = 43114
 export const CHAIN_AVALANCHE_TESTNET = 43113
 
+export const CHAIN_ARBITRUM = 42161
+
 export const CHAIN_ETHER_LIST = [
   CHAIN_ETHER,
   CHAIN_ETHER_ROPSTEN,
@@ -276,5 +278,16 @@ export const Chains: {[chainID: number]: Metadata} = {
     decimals: 18,
     rpc: 'https://sokol.poa.network',
     explorer: 'https://blockscout.com/poa/sokol',
+  },
+  [CHAIN_ARBITRUM]: {
+    name: 'Arbitrum One',
+    displayName: 'Arbitrum',
+    icon: 'https://explorer.offchainlabs.com/images/Arbitrum_Symbol_-_Full_color_-_White_background.svg',
+    whiteIcon: '',
+    tokenIcon: 'https://explorer.offchainlabs.com/images/Arbitrum_Symbol_-_Full_color_-_White_background.svg',
+    symbol: 'AETH',
+    decimals: 18,
+    rpc: 'https://arb1.arbitrum.io/rpc',
+    explorer: 'https://arbiscan.io',
   },
 }
