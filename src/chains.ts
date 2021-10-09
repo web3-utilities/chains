@@ -193,7 +193,7 @@ export const Chains: {[chainID: number]: Metadata} = {
   },
   [CHAIN_HARMONY_0]: {
     name: 'Harmony Mainnet Shard 0',
-    displayName: 'Harmony0',
+    displayName: 'Harmony',
     icon: 'https://raw.githubusercontent.com/web3-utilities/assets/main/chains/harmony.svg',
     whiteIcon: '',
     tokenIcon: 'https://raw.githubusercontent.com/web3-utilities/assets/main/chains/harmony.svg',
@@ -204,7 +204,7 @@ export const Chains: {[chainID: number]: Metadata} = {
   },
   [CHAIN_HARMONY_0_TESTNET]: {
     name: 'Harmony Testnet Shard 0',
-    displayName: 'Harmony0 Testnet',
+    displayName: 'Harmony Testnet',
     icon: 'https://raw.githubusercontent.com/web3-utilities/assets/main/chains/harmony.svg',
     whiteIcon: '',
     tokenIcon: 'https://raw.githubusercontent.com/web3-utilities/assets/main/chains/harmony.svg',
