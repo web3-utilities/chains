@@ -34,6 +34,7 @@ export const CHAIN_HARMONY_0_TESTNET = 1666700000
 export const CHAIN_AVALANCHE = 43114
 export const CHAIN_AVALANCHE_TESTNET = 43113
 
+export const CHAIN_OPTIMISM = 10
 export const CHAIN_ARBITRUM = 42161
 
 export const CHAIN_ETHER_LIST = [
@@ -289,5 +290,16 @@ export const Chains: {[chainID: number]: Metadata} = {
     decimals: 18,
     rpc: 'https://arb1.arbitrum.io/rpc',
     explorer: 'https://arbiscan.io',
+  },
+  [CHAIN_OPTIMISM]: {
+    name: 'Optimism',
+    displayName: 'Optimism',
+    icon: 'https://gateway.optimism.io/static/media/optimism.caeb9392.svg',
+    whiteIcon: '',
+    tokenIcon: 'https://gateway.optimism.io/static/media/optimism.caeb9392.svg',
+    symbol: 'ETH',
+    decimals: 18,
+    rpc: 'https://mainnet.optimism.io',
+    explorer: 'https://explorer.optimism.io/',
   },
 }
