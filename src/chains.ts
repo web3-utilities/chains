@@ -37,6 +37,8 @@ export const CHAIN_AVALANCHE_TESTNET = 43113
 export const CHAIN_OPTIMISM = 10
 export const CHAIN_ARBITRUM = 42161
 
+export const CHAIN_BOBA = 288
+
 export const CHAIN_ETHER_LIST = [
   CHAIN_ETHER,
   CHAIN_ETHER_ROPSTEN,
@@ -301,5 +303,16 @@ export const Chains: {[chainID: number]: Metadata} = {
     decimals: 18,
     rpc: 'https://mainnet.optimism.io',
     explorer: 'https://explorer.optimism.io/',
+  },
+  [CHAIN_BOBA]: {
+    name: 'Boba Network',
+    displayName: 'Boba',
+    icon: 'https://s2.coinmarketcap.com/static/img/coins/64x64/14556.png',
+    whiteIcon: '',
+    tokenIcon: 'https://s2.coinmarketcap.com/static/img/coins/64x64/14556.png',
+    symbol: 'ETH',
+    decimals: 18,
+    rpc: 'https://mainnet.boba.network',
+    explorer: 'https://blockexplorer.boba.network',
   },
 }
