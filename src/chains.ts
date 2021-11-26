@@ -299,7 +299,7 @@ export const Chains: {[chainID: number]: Metadata} = {
     icon: 'https://gateway.optimism.io/static/media/optimism.caeb9392.svg',
     whiteIcon: '',
     tokenIcon: 'https://gateway.optimism.io/static/media/optimism.caeb9392.svg',
-    symbol: 'ETH',
+    symbol: 'OETH',
     decimals: 18,
     rpc: 'https://mainnet.optimism.io',
     explorer: 'https://explorer.optimism.io/',
