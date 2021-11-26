@@ -294,7 +294,7 @@ export const Chains: {[chainID: number]: Metadata} = {
     explorer: 'https://arbiscan.io',
   },
   [CHAIN_OPTIMISM]: {
-    name: 'Optimism',
+    name: 'Optimistic Ethereum',
     displayName: 'Optimism',
     icon: 'https://gateway.optimism.io/static/media/optimism.caeb9392.svg',
     whiteIcon: '',
@@ -302,7 +302,7 @@ export const Chains: {[chainID: number]: Metadata} = {
     symbol: 'OETH',
     decimals: 18,
     rpc: 'https://mainnet.optimism.io',
-    explorer: 'https://explorer.optimism.io/',
+    explorer: 'https://optimistic.etherscan.io',
   },
   [CHAIN_BOBA]: {
     name: 'Boba Network',
