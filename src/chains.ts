@@ -53,6 +53,8 @@ export const CHAIN_FANTOM_TESTNET = 4002
 export const CHAIN_XDAI = 100
 export const CHAIN_XDAI_TESTNET = 77
 
+export const CHAIN_METIS = 1088
+
 export const Chains: {[chainID: number]: Metadata} = {
   [CHAIN_ETHER]: {
     name: 'Ethereum',
@@ -314,5 +316,16 @@ export const Chains: {[chainID: number]: Metadata} = {
     decimals: 18,
     rpc: 'https://mainnet.boba.network',
     explorer: 'https://blockexplorer.boba.network',
+  },
+  [CHAIN_METIS]: {
+    name: 'Metis Andromeda Mainnet',
+    displayName: 'Metis',
+    icon: 'https://l2beat.com/icons/metis.png',
+    whiteIcon: '',
+    tokenIcon: 'https://l2beat.com/icons/metis.png',
+    symbol: 'METIS',
+    decimals: 18,
+    rpc: 'https://andromeda.metis.io/?owner=1088',
+    explorer: 'https://andromeda-explorer.metis.io',
   },
 }
