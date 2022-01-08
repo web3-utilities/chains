@@ -54,6 +54,7 @@ export const CHAIN_XDAI = 100
 export const CHAIN_XDAI_TESTNET = 77
 
 export const CHAIN_METIS = 1088
+export const CHAIN_AURORA = 1313161554
 
 export const Chains: {[chainID: number]: Metadata} = {
   [CHAIN_ETHER]: {
@@ -263,8 +264,8 @@ export const Chains: {[chainID: number]: Metadata} = {
     explorer: 'https://explorer.testnet.fantom.network/',
   },
   [CHAIN_XDAI]: {
-    name: 'XDAI',
-    displayName: 'XDAI',
+    name: 'Gnosis(xDAI)',
+    displayName: 'Gnosis(xDAI)',
     icon: 'https://cryptologos.cc/logos/xdai-stake-logo.svg?v=013',
     whiteIcon: '',
     tokenIcon: 'https://cryptologos.cc/logos/xdai-stake-logo.svg?v=013',
@@ -274,8 +275,8 @@ export const Chains: {[chainID: number]: Metadata} = {
     explorer: 'https://blockscout.com/xdai/mainnet',
   },
   [CHAIN_XDAI_TESTNET]: {
-    name: 'XDAI Testnet',
-    displayName: 'XDAI Testnet',
+    name: 'Gnosis(xDAI) Testnet',
+    displayName: 'Gnosis(xDAI) Testnet',
     icon: 'https://cryptologos.cc/logos/xdai-stake-logo.svg?v=013',
     whiteIcon: '',
     tokenIcon: 'https://cryptologos.cc/logos/xdai-stake-logo.svg?v=013',
@@ -328,4 +329,15 @@ export const Chains: {[chainID: number]: Metadata} = {
     rpc: 'https://andromeda.metis.io/?owner=1088',
     explorer: 'https://andromeda-explorer.metis.io',
   },
+  [CHAIN_AURORA]: {
+    name: 'Aurora Mainnet',
+    displayName: 'Aurora',
+    icon: 'https://doc.aurora.dev/_img/favicon.svg',
+    whiteIcon: '',
+    tokenIcon: 'https://doc.aurora.dev/_img/favicon.svg',
+    symbol: 'aETH',
+    decimals: 18,
+    rpc: 'https://mainnet.aurora.dev',
+    explorer: 'https://explorer.mainnet.aurora.dev',
+  }
 }
