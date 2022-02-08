@@ -56,6 +56,9 @@ export const CHAIN_XDAI_TESTNET = 77
 export const CHAIN_METIS = 1088
 export const CHAIN_AURORA = 1313161554
 
+export const CHAIN_OASIS = 42262
+export const CHAIN_OASIS_TESTNET = 42261
+
 export const Chains: {[chainID: number]: Metadata} = {
   [CHAIN_ETHER]: {
     name: 'Ethereum',
@@ -339,5 +342,27 @@ export const Chains: {[chainID: number]: Metadata} = {
     decimals: 18,
     rpc: 'https://mainnet.aurora.dev',
     explorer: 'https://explorer.mainnet.aurora.dev',
+  },
+  [CHAIN_OASIS]: {
+    name: 'OASIS Mainnet',
+    displayName: 'OASIS',
+    icon: 'https://cryptologos.cc/logos/oasis-network-rose-logo.svg?v=018',
+    whiteIcon: '',
+    tokenIcon: 'https://cryptologos.cc/logos/oasis-network-rose-logo.svg?v=018',
+    symbol: 'ROSE',
+    decimals: 18,
+    rpc: 'https://emerald.oasis.dev',
+    explorer: 'https://explorer.emerald.oasis.dev/',
+  },
+  [CHAIN_OASIS_TESTNET]: {
+    name: 'OASIS Testnet',
+    displayName: 'OASIS Testnet',
+    icon: 'https://cryptologos.cc/logos/oasis-network-rose-logo.svg?v=018',
+    whiteIcon: '',
+    tokenIcon: 'https://cryptologos.cc/logos/oasis-network-rose-logo.svg?v=018',
+    symbol: 'ROSE',
+    decimals: 18,
+    rpc: 'https://testnet.emerald.oasis.dev',
+    explorer: 'https://testnet.explorer.emerald.oasis.dev/',
   }
 }
