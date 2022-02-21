@@ -55,6 +55,7 @@ export const CHAIN_XDAI_TESTNET = 77
 
 export const CHAIN_METIS = 1088
 export const CHAIN_AURORA = 1313161554
+export const CHAIN_AURORA_TESTNET = 1313161555
 
 export const CHAIN_OASIS = 42262
 export const CHAIN_OASIS_TESTNET = 42261
@@ -342,6 +343,17 @@ export const Chains: {[chainID: number]: Metadata} = {
     decimals: 18,
     rpc: 'https://mainnet.aurora.dev',
     explorer: 'https://explorer.mainnet.aurora.dev',
+  },
+  [CHAIN_AURORA_TESTNET]: {
+    name: 'Aurora Testnet',
+    displayName: 'Aurora Testnet',
+    icon: 'https://doc.aurora.dev/_img/favicon.svg',
+    whiteIcon: '',
+    tokenIcon: 'https://doc.aurora.dev/_img/favicon.svg',
+    symbol: 'aETH',
+    decimals: 18,
+    rpc: 'https://testnet.aurora.dev',
+    explorer: 'https://explorer.testnet.aurora.dev',
   },
   [CHAIN_OASIS]: {
     name: 'OASIS Mainnet',
