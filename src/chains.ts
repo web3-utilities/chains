@@ -36,6 +36,7 @@ export const CHAIN_AVALANCHE_TESTNET = 43113
 
 export const CHAIN_OPTIMISM = 10
 export const CHAIN_ARBITRUM = 42161
+export const CHAIN_ARBITRUM_TESTNET = 421611
 
 export const CHAIN_BOBA = 288
 
@@ -299,6 +300,17 @@ export const Chains: {[chainID: number]: Metadata} = {
     decimals: 18,
     rpc: 'https://arb1.arbitrum.io/rpc',
     explorer: 'https://arbiscan.io',
+  },
+  [CHAIN_ARBITRUM_TESTNET]: {
+    name: 'Arbitrum Rinkeby',
+    displayName: 'Arbitrum Rinkeby',
+    icon: 'https://explorer.offchainlabs.com/images/Arbitrum_Symbol_-_Full_color_-_White_background.svg',
+    whiteIcon: '',
+    tokenIcon: 'https://explorer.offchainlabs.com/images/Arbitrum_Symbol_-_Full_color_-_White_background.svg',
+    symbol: 'ARETH',
+    decimals: 18,
+    rpc: 'https://rinkeby.arbitrum.io/rpc',
+    explorer: 'https://rinkeby-explorer.arbitrum.io',
   },
   [CHAIN_OPTIMISM]: {
     name: 'Optimistic Ethereum',
