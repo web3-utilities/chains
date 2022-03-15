@@ -61,6 +61,8 @@ export const CHAIN_AURORA_TESTNET = 1313161555
 export const CHAIN_OASIS = 42262
 export const CHAIN_OASIS_TESTNET = 42261
 
+export const CHAIN_KCC = 321
+
 export const Chains: {[chainID: number]: Metadata} = {
   [CHAIN_ETHER]: {
     name: 'Ethereum',
@@ -388,5 +390,16 @@ export const Chains: {[chainID: number]: Metadata} = {
     decimals: 18,
     rpc: 'https://testnet.emerald.oasis.dev',
     explorer: 'https://testnet.explorer.emerald.oasis.dev/',
+  },
+  [CHAIN_KCC]: {
+    name: 'KCC Mainnet',
+    displayName: 'KCC',
+    icon: 'https://cryptologos.cc/logos/oasis-network-rose-logo.svg?v=018',
+    whiteIcon: '',
+    tokenIcon: 'https://cryptologos.cc/logos/oasis-network-rose-logo.svg?v=018',
+    symbol: 'KCS',
+    decimals: 18,
+    rpc: 'https://rpc-mainnet.kcc.network',
+    explorer: 'https://explorer.kcc.io/en',
   }
 }
