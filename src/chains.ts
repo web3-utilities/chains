@@ -62,6 +62,10 @@ export const CHAIN_OASIS = 42262
 export const CHAIN_OASIS_TESTNET = 42261
 
 export const CHAIN_KCC = 321
+export const CHAIN_IOTEX = 4689
+export const CHAIN_AAC = 512
+
+export const CHAIN_CONFLUX = 1030
 
 export const Chains: {[chainID: number]: Metadata} = {
   [CHAIN_ETHER]: {
@@ -401,5 +405,38 @@ export const Chains: {[chainID: number]: Metadata} = {
     decimals: 18,
     rpc: 'https://rpc-mainnet.kcc.network',
     explorer: 'https://explorer.kcc.io/en',
+  },
+  [CHAIN_IOTEX]: {
+    name: 'IoTeX Mainnet',
+    displayName: 'IoTeX',
+    icon: 'https://cryptologos.cc/logos/oasis-network-rose-logo.svg?v=018',
+    whiteIcon: '',
+    tokenIcon: 'https://cryptologos.cc/logos/oasis-network-rose-logo.svg?v=018',
+    symbol: 'IOTX',
+    decimals: 18,
+    rpc: 'https://babel-api.mainnet.iotex.io',
+    explorer: 'https://iotexscan.io',
+  },
+  [CHAIN_AAC]: {
+    name: 'AAC',
+    displayName: 'AAC',
+    icon: 'https://cryptologos.cc/logos/oasis-network-rose-logo.svg?v=018',
+    whiteIcon: '',
+    tokenIcon: 'https://cryptologos.cc/logos/oasis-network-rose-logo.svg?v=018',
+    symbol: 'KCS',
+    decimals: 18,
+    rpc: 'https://rpc.acuteangle.com',
+    explorer: 'https://scan.acuteangle.com',
+  },
+  [CHAIN_CONFLUX]: {
+    name: 'Conflux eSpace',
+    displayName: 'Conflux eSpace',
+    icon: 'https://pbs.twimg.com/profile_images/1411729445929558023/hEt9Lch0_400x400.jpg',
+    whiteIcon: '',
+    tokenIcon: 'https://pbs.twimg.com/profile_images/1411729445929558023/hEt9Lch0_400x400.jpg',
+    symbol: 'CFX',
+    decimals: 18,
+    rpc: 'https://evm.confluxrpc.com',
+    explorer: 'https://evm.confluxscan.net',
   }
 }
