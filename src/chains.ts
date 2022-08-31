@@ -15,6 +15,7 @@ export const CHAIN_ETHER_ROPSTEN = 3
 export const CHAIN_ETHER_RINKEBY = 4
 export const CHAIN_ETHER_GOERLI = 5
 export const CHAIN_ETHER_KOVAN = 42
+export const CHAIN_ETHW_TESTNET = 10002
 
 export const CHAIN_POLYGON = 137
 export const CHAIN_POLYGON_MUMBAI = 80001
@@ -438,5 +439,16 @@ export const Chains: {[chainID: number]: Metadata} = {
     decimals: 18,
     rpc: 'https://evm.confluxrpc.com',
     explorer: 'https://evm.confluxscan.net',
+  },
+  [CHAIN_ETHW_TESTNET]: {
+    name: 'ethw-iceberg-testnet',
+    displayName: 'ETHW Testnet',
+    icon: 'https://pbs.twimg.com/profile_images/1411729445929558023/hEt9Lch0_400x400.jpg',
+    whiteIcon: '',
+    tokenIcon: 'https://pbs.twimg.com/profile_images/1411729445929558023/hEt9Lch0_400x400.jpg',
+    symbol: 'CFX',
+    decimals: 18,
+    rpc: 'https://iceberg.ethereumpow.org',
+    explorer: 'http://iceberg.ethwscan.com',
   }
 }
