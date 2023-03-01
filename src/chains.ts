@@ -68,7 +68,19 @@ export const CHAIN_AAC = 512
 
 export const CHAIN_CONFLUX = 1030
 
+export const CHAIN_FILECOIN_TEST = 3141
+
 export const Chains: {[chainID: number]: Metadata} = {
+  [CHAIN_FILECOIN_TEST]: {
+    name: 'Filecoin Hyperspace Testnet',
+    displayName: 'Filecoin Hyperspace Testnet',
+    icon: 'https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/svg/color/eth.svg',
+    whiteIcon: 'https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/svg/white/eth.svg',
+    tokenIcon: 'https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/svg/color/eth.svg',
+    symbol: 'tFIL',
+    decimals: 18,
+    explorer: 'https://hyperspace.filfox.info/en',
+  },
   [CHAIN_ETHER]: {
     name: 'Ethereum',
     displayName: 'Ethereum',
