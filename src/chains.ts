@@ -176,8 +176,8 @@ export const Chains: {[chainID: number]: Metadata} = {
     explorer: 'https://testnet.hecoinfo.com',
   },
   [CHAIN_BSC]: {
-    name: 'Binance Smart Chain Mainnet',
-    displayName: 'BSC',
+    name: 'BNB Chain Mainnet',
+    displayName: 'BNB',
     icon: 'https://raw.githubusercontent.com/web3-utilities/assets/main/chains/bsc.png',
     whiteIcon: 'https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/svg/white/bnb.svg',
     tokenIcon:
@@ -188,8 +188,8 @@ export const Chains: {[chainID: number]: Metadata} = {
     explorer: 'https://bscscan.com',
   },
   [CHAIN_BSC_TESTNET]: {
-    name: 'Binance Smart Chain Testnet',
-    displayName: 'BSC Testnet',
+    name: 'BNB Chain Testnet',
+    displayName: 'BNB Testnet',
     icon: 'https://raw.githubusercontent.com/web3-utilities/assets/main/chains/bsc.png',
     whiteIcon: 'https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/svg/white/bnb.svg',
     tokenIcon:
@@ -200,8 +200,8 @@ export const Chains: {[chainID: number]: Metadata} = {
     explorer: 'https://testnet.bscscan.com',
   },
   [CHAIN_OK_TESTNET]: {
-    name: 'OKEXChain Testnet',
-    displayName: 'OKEXChain Testnet',
+    name: 'OKC Testnet',
+    displayName: 'OKC Testnet',
     icon: 'https://raw.githubusercontent.com/web3-utilities/assets/main/chains/okc.png',
     whiteIcon: 'https://raw.githubusercontent.com/web3-utilities/assets/main/chains/okc.png',
     tokenIcon: 'https://raw.githubusercontent.com/web3-utilities/assets/main/chains/okc.png',
@@ -211,8 +211,8 @@ export const Chains: {[chainID: number]: Metadata} = {
     explorer: 'https://www.oklink.com/okexchain-test',
   },
   [CHAIN_OK]: {
-    name: 'OKEXChain Mainnet',
-    displayName: 'OKEXChain',
+    name: 'OKC Mainnet',
+    displayName: 'OKC',
     icon: 'https://raw.githubusercontent.com/web3-utilities/assets/main/chains/okc.png',
     whiteIcon: 'https://raw.githubusercontent.com/web3-utilities/assets/main/chains/okc.png',
     tokenIcon: 'https://raw.githubusercontent.com/web3-utilities/assets/main/chains/okc.png',
